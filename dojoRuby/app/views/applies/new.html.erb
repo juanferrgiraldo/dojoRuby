@@ -1,0 +1,20 @@
+<%= form_for(@applies) do |f| %>
+<div>
+    <h1>Crear nueva solicitud</h1>
+    <div>
+        <%= f.text_field :title, placeholder: "Título" %>        
+    </div>
+    <div>
+        <%= f.text_area :body, placeholder: "solicitud" %>        
+    </div>
+    <div>
+        <%= f.text_field :name, placeholder: "Su nombre" %>        
+    </div>
+    <div>
+        <%= f.text_field :edad, placeholder: "Su edad" %>        
+    </div>
+    <div>
+        <%= f.submit "Enviar"%>        
+    </div>
+</div>
+<% end %>
